@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "variables";
+
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+body {
+    font-family: "Source Code Pro", monospace;
+    color: $black;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

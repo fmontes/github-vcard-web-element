@@ -1,0 +1,31 @@
+<div class="card" *ngIf="data$ | async; let data; else loading">
+    <img src="{{data.avatar_url}}" alt="Freddy Montes" class="card__avatar" />
+
+    <header class="card__header">
+        <h2 class="card__name">{{ data.name }}</h2>
+        <p class="card__info">
+            <span class="card__since">Member since {{ data.created_at | date: 'longDate' }}</span>
+            <span class="card__from">From {{ data.location }}</span>
+        </p>
+    </header>
+
+    <ul class="card__data">
+        <li>
+            <span class="card__data-content">{{ data.public_repos }}</span>
+            <span class="card__data-name">Repos</span>
+        </li>
+        <li>
+            <span class="card__data-content">{{ data.public_gists }}</span>
+            <span class="card__data-name">Gist</span>
+        </li>
+        <li>
+            <span class="card__data-content">{{ data.followers }}</span>
+            <span class="card__data-name">Followers</span>
+        </li>
+        <li>
+            <span class="card__data-content">{{ data.following }}</span>
+            <span class="card__data-name">Following</span>
+        </li>
+    </ul>
+</div>
+<ng-template #loading>Loading User Data...</ng-template>
