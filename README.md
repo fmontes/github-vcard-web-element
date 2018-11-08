@@ -1,4 +1,37 @@
-# GithubVcard
+# Github Vcard Web Element
+
+<img src="https://user-images.githubusercontent.com/751424/48176613-8827f980-e2d6-11e8-8453-b05db2b7774a.jpg" atl="Github VCard Web Component" />
+
+Using Angular to create [Web Component](https://developer.mozilla.org/en-US/docs/Web/Web_Components).
+
+## Build and use
+
+1. Run `npm run build:elements`
+2. That will build a Javsscript file into: `/elements/github-vcard.js`
+3. Create a HTML page with the following code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Element</title>
+
+</head>
+<body>
+    <github-vcard user="YOUR_GITHUB_USERNAME"></github-vcard>
+    <script type="text/javascript" src="github-vcard.js"></script>
+</body>
+</html>
+```
+
+4. And you are all set
+
+------------------------------------
+
+## @angular/cli
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
 
