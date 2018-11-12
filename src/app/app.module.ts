@@ -9,7 +9,6 @@ import { GithubVcardComponent } from './components/github-vcard/github-vcard.com
 @NgModule({
     declarations: [AppComponent, GithubVcardComponent],
     imports: [BrowserModule, HttpClientModule],
-    providers: [],
     entryComponents: [GithubVcardComponent]
 })
 export class AppModule {
